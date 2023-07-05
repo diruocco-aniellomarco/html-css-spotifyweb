@@ -2,9 +2,12 @@
     --altezza-footer: 150px;
     --altezza-header: 100px;
 
-    --larghezza-nav: 300px;
+    --larghezza-aside: 300px;
 }
 
+body {
+    color: #a3a3a3;
+}
 
 * {
     margin: 0;
@@ -21,7 +24,10 @@ footer {
 .big-container {
     height: calc( 100vh - var(--altezza-footer));
     display: flex;
+}
 
+ul {
+    list-style: none;
 }
 
 /* debug */
@@ -37,11 +43,22 @@ footer {
 }
 
 
-/* nav */
+/* aside */
 .aside-container {
-    height: 100%;
-    width: var(--larghezza-nav);
+    height: calc( 100vh - var(--altezza-footer));
+    width: var(--larghezza-aside);
     background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-spotify {
+    height: var(--altezza-header);
+    color: white;
+}
+
+.user{
+    margin-top: auto;
 }
 
 
@@ -59,7 +76,7 @@ footer {
 
 /* Main */
 .container-main {
-    width: calc( 100% - var(--larghezza-nav));
+    width: calc( 100% - var(--larghezza-aside));
     height: 100%;
     background-color: #141922;
     position: relative;
@@ -70,6 +87,7 @@ footer {
 
 .container-footer {
     height: 100%;
+    color: white;
 }
 
 .row_footer {
@@ -82,7 +100,7 @@ footer {
 }
 
 .col_footer {
-    width: calc( var(--larghezza-nav) - 10px);
+    width: calc( var(--larghezza-aside) - 10px);
     display: flex;    
 }
 
