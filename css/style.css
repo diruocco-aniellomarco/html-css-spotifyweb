@@ -71,16 +71,18 @@ a {
 
 /* Header */
 .container-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 21px;
     height: var(--altezza-header);
-    background-color: rgba(0, 0, 0, 0.158);
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
+    
+
 }
 
 
