@@ -466,12 +466,18 @@ li:hover {
     #small-logo {
         display: block;
     }
+
+    #small-logo{
+        display: inline;
+
+    }
     :root {
         --larghezza-aside: 50px;
     }
     .icon-nav-list,
     .aside-container{        
         padding: 0;
+        padding-top: 5px;
         text-align: center;
     }
 
