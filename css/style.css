@@ -215,7 +215,7 @@ dello stesso grigio del resto
 .row-main {
     margin: 50px 0;
 }
-    /* Recently */
+    
 
 
 
@@ -237,18 +237,43 @@ dello stesso grigio del resto
 
 
 .card {
+    max-width: var(--larghezza-card);    
+}
+.card_foto {
+    position: relative;
+}
+.play {
+    display: none;
     max-width: var(--larghezza-card);
-    
+    aspect-ratio: 1/1;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.row_play {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
+.circle {
+    border-radius: 50%;
+}
 .card_foto img {
     object-fit: contain;
-    width: 100%;
-    
+    width: 100%;      
 }
+
 .card_text {
     text-align: center;
 }
+
 .card_song {
     font-size: 1.5rem;
     font-weight: bold;
@@ -367,6 +392,15 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
+/* creare gli hover sui video sulla classe .play displau:blocK */
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     :root {
