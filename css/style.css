@@ -38,10 +38,6 @@ a {
 }
 
 
-.white {
-    color: white;
-}
-
 /* aside */
 .aside-container {
     height: calc( 100vh - var(--altezza-footer));
@@ -111,6 +107,7 @@ dello stesso grigio del resto
 
 .play-list> h3 {
     margin-bottom: 10px;
+    color: white;
 }
 
 .user_download> img {
@@ -165,7 +162,7 @@ dello stesso grigio del resto
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 .container-header> a {
     color: white;
@@ -322,7 +319,9 @@ footer {
     flex-direction: column;
     width: calc( 100% / 3 );    
 }
-
+.icon {
+    color: #9b9b9c;
+}
 .volume {
     display: flex;
 }
@@ -335,6 +334,10 @@ footer {
 .card_footer> img {
     height: 50px;
     margin-right: 10px;
+}
+
+.card_footer h5 {
+    color:#9b9b9c ;
 }
 .played .icon *{
     margin: 0 10px;
@@ -393,13 +396,44 @@ footer {
     justify-content: space-around;
 }
 
-
+                    /* ----------HOVER */
 .card_foto:hover .play{
     display: block;
 }
 
+li:hover {
+    color: white;
+}
+
+.white:hover {
+    color: white;
+}
+
+.icon-nav-list:hover {
+    color: white;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(321deg) brightness(101%) contrast(103%);
+}
+
+#header-upgrade:hover {
+    transform: scale(1.2,1.2);
+}
 
 
+
+.new-playlist:hover #add-playlist{
+    background-color: white;
+}
+
+.progress-bar:hover .progress-progress{
+    background-color: rgba(41, 128, 0, 0.911);
+}
+.progress-bar:hover .progress_dot {
+    display: block;
+}
+
+.play_played:hover {
+    transform: scale(1.4,1.4);
+}
 
 
 
