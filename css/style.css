@@ -144,6 +144,16 @@ dello stesso grigio del resto
 .user_profile> h4 {
     color: white;
 }
+#grey-bar {
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    background-color:#9b9b9c ;
+    padding: 0;
+}
+
+
+
 
 /* Header */
 .container-header {
@@ -372,6 +382,7 @@ footer {
 
 @media screen and (max-width: 576px) {
     
+    #grey-bar,
     .user-text,
     #green-bar-aside,
     #logo-spotify,
