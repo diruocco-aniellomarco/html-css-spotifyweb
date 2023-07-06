@@ -183,7 +183,6 @@ dello stesso grigio del resto
 .subtitle-green {
     display: block;
     height: 3px;
-    /* width: 10px; */
     background-color: #beff33;
     bottom: 0;
     right: 30%;
@@ -191,22 +190,29 @@ dello stesso grigio del resto
     position: absolute;
 }
 .link-main {
-    margin-top: 20px;
+    margin: 20px 0;
     text-align: center;
 }
 
 .small_container-main {
     padding-left: 20px;
 }
+
+.row-main {
+    margin: 50px 0;
+}
     /* Recently */
 
 
 
     /* ----- TITOLI SEZIONI */
-.small_container-main> div:first-child {
-    margin-bottom: 30px;
+.small_container-main> h2:first-child {
     font-size: 2rem;
     color: white;    
+}
+.popular-artist> p,
+.creat-by-user> p {
+    margin-top: 20px;
 }
 
 .row-main {
@@ -220,6 +226,7 @@ dello stesso grigio del resto
     max-width: var(--larghezza-card);
     
 }
+
 .card_foto img {
     object-fit: contain;
     width: 100%;
@@ -228,8 +235,17 @@ dello stesso grigio del resto
 .card_text {
     text-align: center;
 }
+.card_song {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
 
 
+/*artisti popolari*/
+.popular-artist img {
+    border-radius: 50%;
+}
 
 /* footer */
 
