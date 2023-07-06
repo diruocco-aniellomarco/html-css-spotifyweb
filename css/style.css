@@ -41,16 +41,6 @@ a {
 .white {
     color: white;
 }
-/* debug */
-
-.blu {
-    background-color: blue;
-    min-height: 50%;
-    color: red;
-    font-size: 2rem;
-}
-
-
 
 /* aside */
 .aside-container {
@@ -146,6 +136,11 @@ dello stesso grigio del resto
     width: 2px;
     background-color: #beff33;
 }
+
+.user_profile> h4 {
+    color: white;
+}
+
 /* Header */
 .container-header {
     position: sticky;
@@ -158,10 +153,12 @@ dello stesso grigio del resto
     align-items: center;
     padding-right: 20px;
 }
-.user_profile> h4 {
+.container-header> a {
     color: white;
+    padding: 10px 40px;
+    border: 2px solid white;
+    border-radius: 25px;
 }
-
 
 /* Main */
 .container-main {
@@ -173,12 +170,28 @@ dello stesso grigio del resto
 }
 
    /* Link Main */
-.link-main li {
-    display: inline-block;
+.link-main ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.link-main li:first-child{
+    position: relative;
+}
+.subtitle-green {
+    display: block;
+    height: 3px;
+    /* width: 10px; */
+    background-color: #beff33;
+    bottom: 0;
+    right: 30%;
+    left: 30%;
+    position: absolute;
+}
 .link-main {
-    margin-top: calc( var(--altezza-header) + 20px);
+    margin-top: 20px;
     text-align: center;
 }
 
