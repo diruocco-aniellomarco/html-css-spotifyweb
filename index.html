@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
@@ -212,20 +215,56 @@
     <footer>
 
         <section class="row_footer">
-            <div class="col_footer ">
-                <div class="card_footer song-playing ">
-                    <div>foto</div>
-                    <div> autore <br> titolo titolo</div>
+
+            <div class="col_footer played">
+                
+                <div class="card_footer">
+                    <img src="/img/sinister.jpeg" alt="">
+                    <div>
+                        <h5>autore</h5>
+                        <h6> titolo titolo</h6>
+                    </div>
                 </div>
-                <div class="card_footer ">ciao ciao</div>
+
+                <div class="card_footer icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+
+
             </div>
+
             <div class="col_footer col_footer-center">
-                <div class="card_footer ">ciao</div>
-                <div class="card_footer playback ">ciao <span class=" ">ciao</span> ciao</div>
+
+                <div class="icon_played">    
+                    <i class="fa-solid fa-shuffle fa-lg"></i>
+                    <i class="fa-solid fa-backward-step fa-lg"></i>
+                    <i class="fa-regular fa-circle-play fa-xl"></i>
+                    <i class="fa-solid fa-forward-step fa-lg"></i>
+                    <i class="fa-solid fa-arrow-rotate-right fa-lg"></i>
+                </div>
+                <div class="card_footer progress">
+                    <span class="time-pregress">0:25</span>
+                    <span class="progress-bar">
+                        <span class="progress-progress">
+                            <span class="progress_dot"></span>
+                        </span>
+                    </span>
+                    <span class="time-total">4:35</span>
+                </div>
             </div>
+
             <div class="col_footer volume">
-                <div class="card_footer ">ciao</div>
-                <div class="card_footer ">c c c ciao</div>
+                <span class="prova">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>                    
+                </span>
+                <span class="progress-bar">
+                    <span class="progress-progress">
+                        <span class="progress_dot"></span>
+                    </span>
+                </span>
             </div>
         </section>
 
