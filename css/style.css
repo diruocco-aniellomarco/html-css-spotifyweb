@@ -393,8 +393,10 @@ footer {
     justify-content: space-around;
 }
 
-/* creare gli hover sui video sulla classe .play displau:blocK */
 
+.card_foto:hover .play{
+    display: block;
+}
 
 
 
