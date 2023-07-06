@@ -3,8 +3,8 @@
     --altezza-header: 100px;
 
     --larghezza-aside: 250px;
-
-    --larghezza-card: calc ( 100% / 6);
+    --larghezza-card: 300px;
+    /* --larghezza-card: calc ( 100% / 6); */
 }
 
 body {
@@ -57,25 +57,29 @@ a {
     height: var(--altezza-header);
     color: white;
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
 }
 #logo-spotify> img {
     width: calc(( 100% / 3) * 2);
 }
+#small-logo {
+    display: none;
+}
+
 
 /*
 ridimensiono le svg e le faccio diventare
 dello stesso grigio del resto
 */
-.icon-nav img {
+#small-logo,
+.icon-nav {
     width: 30px;
     filter: brightness(0) saturate(100%) invert(69%) sepia(6%) saturate(44%) hue-rotate(201deg) brightness(89%) contrast(89%);
 }
 
 
 .new-playlist,
-.icon-nav{
+.icon-nav-list{
     display: flex;
     align-items: center;
     gap: 5px;
@@ -239,6 +243,8 @@ dello stesso grigio del resto
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
+    height: 100%;
+    overflow-wrap: normal;
 }
 
 
@@ -346,8 +352,65 @@ footer {
     justify-content: space-between;
 }
 
-.prova {
+.icon_volume {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 768px) {
+    :root {
+        --larghezza-card: 200px;
+    }
+    .icon {
+        flex-direction: column;
+    }
+    .col_footer {
+        width: calc( var(--larghezza-aside) - 80px);
+    }    
+} 
+
+@media screen and (max-width: 576px) {
+    
+    .user-text,
+    #green-bar-aside,
+    #logo-spotify,
+    .icon-nav-text,
+    .play-list {
+        display: none;
+    }
+
+    .icon-nav-list,
+    .user div,
+    #small-logo {
+        display: block;
+    }
+    :root {
+        --larghezza-aside: 50px;
+    }
+    .icon-nav-list,
+    .aside-container{        
+        padding: 0;
+        text-align: center;
+    }
+
+
+
+    /* footer */
+
+
+
+    .col_footer {
+        width: 150px;
+    }
+    .icon_played {
+        width: 150px;
+    }
+
+
+    .progress {        
+        min-width: 200px;
+    }
+
+
+}  
