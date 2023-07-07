@@ -45,7 +45,7 @@ a {
     background-color: black;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
     position: relative;
 }
 
@@ -53,7 +53,8 @@ a {
     height: var(--altezza-header);
     color: white;
     display: flex;
-    align-items: center;    
+    align-items: center;
+    padding-left: 20px;    
 }
 #logo-spotify> img {
     width: calc(( 100% / 3) * 2);
@@ -62,7 +63,18 @@ a {
     display: none;
 }
 
+/* NAV */
 
+/* nav {
+    margin: 20px;
+} */
+.nav-list-home li {
+    /* padding-left: 20px; */
+    padding: 10px 0 10px 20px;
+}
+.green-border {
+    border-left: 3px solid #beff33;
+}
 /*
 ridimensiono le svg e le faccio diventare
 dello stesso grigio del resto
@@ -72,17 +84,19 @@ dello stesso grigio del resto
     width: 30px;
     filter: brightness(0) saturate(100%) invert(69%) sepia(6%) saturate(44%) hue-rotate(201deg) brightness(89%) contrast(89%);
 }
-
+.new-playlist {
+    margin-bottom: 15px;
+}
 
 .new-playlist,
 .icon-nav-list{
     display: flex;
     align-items: center;
-    gap: 5px;
-    margin-bottom: 15px;
+    gap: 5px;    
 }
 .user{
     margin-top: auto;
+    padding: 20px;
 }
 
 #add-playlist {
@@ -102,6 +116,10 @@ dello stesso grigio del resto
     line-height: 35px;
     max-height: calc(100vh - 400px);
     overflow-y: auto;
+}
+
+.play-list {
+    padding-left: 20px;
 }
 
 .play-list> h3 {
@@ -127,7 +145,7 @@ dello stesso grigio del resto
 }
 
 
-#green-bar-aside {
+/* #green-bar-aside {
     display: block;
     top: calc(var(--altezza-header) + 10px);
     left:0;
@@ -135,7 +153,10 @@ dello stesso grigio del resto
     height: 50px;
     width: 2px;
     background-color: #beff33;
-}
+} */
+
+
+
 
 .user_profile> h4 {
     color: white;
