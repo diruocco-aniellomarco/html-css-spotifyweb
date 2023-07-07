@@ -140,13 +140,11 @@ dello stesso grigio del resto
 .user_profile> h4 {
     color: white;
 }
-#grey-bar {
-    display: block;
-    height: 1.5px;
-    width: 100%;
-    background-color:#9b9b9c ;
-    padding: 0;
+.user_profile {
+    border-top: 1.5px solid #9b9b9c;
 }
+
+
 
 
 
@@ -451,7 +449,7 @@ li:hover {
 
 @media screen and (max-width: 576px) {
     
-    #grey-bar,
+    
     .user-text,
     #green-bar-aside,
     #logo-spotify,
@@ -479,7 +477,9 @@ li:hover {
         padding-top: 5px;
         text-align: center;
     }
-
+    .user_profile {
+        border: none;
+    }
 
 
     /* footer */
