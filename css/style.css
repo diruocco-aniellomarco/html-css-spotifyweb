@@ -84,10 +84,7 @@ dello stesso grigio del resto
 .user{
     margin-top: auto;
 }
-.name-playlist {
-    overflow-y: auto;
-    flex-shrink: 3;
-}
+
 #add-playlist {
     width: 40px;
     height: 40px;
@@ -103,6 +100,8 @@ dello stesso grigio del resto
 }
 #name-playlist {
     line-height: 35px;
+    max-height: calc(100vh - 400px);
+    overflow-y: auto;
 }
 
 .play-list> h3 {
