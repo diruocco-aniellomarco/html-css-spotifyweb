@@ -501,8 +501,13 @@ li:hover {
     .user_profile {
         border: none;
     }
-
-
+    .user,
+    .nav-list-home li {
+        padding: 0;
+    }
+    .green-border {
+        border: none;
+    }
     /* footer */
 
 
